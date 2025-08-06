@@ -269,6 +269,100 @@ ul li i {
     height: 120px;
   }
 }
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    margin: 30px auto;
+    padding: 0 8px;
+  }
+  section {
+    padding: 15px 6px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+  .gallery-item img {
+    height: 90px;
+  }
+  table th, table td {
+    padding: 7px 4px;
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 25px 5px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  p.subtitle {
+    font-size: 0.95rem;
+  }
+  nav {
+    font-size: 0.95rem;
+    padding: 8px 0 !important;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .gallery-item img {
+    height: 70px;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(56,176,0,0.07);
+    background: #e6ffe6;
+    padding: 6px 0;
+  }
+  table td {
+    text-align: left;
+    padding: 7px 10px;
+    position: relative;
+    font-size: 0.95rem;
+  }
+  table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 110px;
+    color: #2d6a4f;
+    margin-right: 8px;
+  }
+  table td[colspan] {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .gallery-item img {
+    height: 50px;
+  }
+  footer {
+    font-size: 0.8rem;
+    padding: 8px 2px;
+  }
+}
 </style>
 </head>
 <body>
@@ -288,7 +382,7 @@ ul li i {
   <main>
     <section>
       <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold; font-size: 45px;" >Background</h2>
-<img style="margin: auto; width: 100%; border-radius: 15px;" src="https://tse1.mm.bing.net/th/id/OIP.RwecQfP5Twhvn3U6cNYZbAHaE7?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" alt="My Image" style="width: 100%; max-width: 500px; border-radius: 10px; margin-bottom: 20px;">
+       <img style="margin: auto; width: 100%; border-radius: 15px;" src="https://tse1.mm.bing.net/th/id/OIP.RwecQfP5Twhvn3U6cNYZbAHaE7?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" alt="My Image" style="width: 100%; max-width: 500px; border-radius: 10px; margin-bottom: 20px;">
       <p>
         Hello! I’m <strong>Aiden Ainex</strong> — a tech enthusiast built by curiosity, powered by caffeine, and coded for creation. I operate at the intersection of web development, artificial intelligence, and storytelling. While I may appear human (and I assure you, I am), my mind runs on logic, layers, and limitless learning.
       </p>
@@ -438,7 +532,7 @@ ul li i {
     <p>Deploying apps on cloud platforms</p>
   </div>
   <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGUlMjBidWdzfGVufDB8fDB8fHwwhttps://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGUlMjBidWdzfGVufDB8fDB8fHwwhttps://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGUlMjBidWdzfGVufDB8fDB8fHww" alt="Debugging">
+    <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGUlMjBidWdzfGVufDB8fDB8fHww" alt="Debugging">
     <p>Fixing critical bugs before launch</p>
   </div>
   </section>
