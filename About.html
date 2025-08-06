@@ -14,6 +14,26 @@
       color: #1b4332;
       line-height: 1.7;
     }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2d6a4f;
+}
+
+nav a {
+  margin: 6px 10px;
+  padding: 6px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background-color: #40916c;
+}
+
 
 
     header {
@@ -255,66 +275,72 @@ ul li i {
   0%, 100% { transform: translateY(0);}
   50% { transform: translateY(-6px);}
 }
-@media (max-width: 600px) {
-  section {
-    padding: 18px;
-  }
+@media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  p.subtitle {
+    font-size: 1rem;
+  }
+  section {
+    padding: 20px 12px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
   }
   .gallery-item img {
     height: 120px;
   }
-}
-@media (max-width: 900px) {
-  main {
-    max-width: 98vw;
-    margin: 30px auto;
-    padding: 0 8px;
+  ul li {
+    font-size: 1rem;
   }
-  section {
-    padding: 15px 6px;
-  }
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 10px;
-  }
-  .gallery-item img {
-    height: 90px;
-  }
-  table th, table td {
-    padding: 7px 4px;
-    font-size: 0.9rem;
-  }
-  h2 {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    padding: 25px 5px;
-  }
-  h1 {
-    font-size: 1.3rem;
-    margin-bottom: 6px;
-  }
-  p.subtitle {
+  nav a {
+    display: inline-block;
+    margin: 10px 12px;
     font-size: 0.95rem;
   }
   nav {
-    font-size: 0.95rem;
-    padding: 8px 0 !important;
+    flex-direction: column;
+    padding: 10px 0;
   }
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 8px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
   .gallery-item img {
-    height: 70px;
+    height: 100px;
+  }
+  ul li {
+    font-size: 0.95rem;
+  }
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+  nav a {
+    font-size: 0.9rem;
+    margin: 8px 10px;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
   }
   table, thead, tbody, th, td, tr {
     display: block;
@@ -351,18 +377,20 @@ ul li i {
   }
 }
 
-@media (max-width: 400px) {
-  h1 {
-    font-size: 1rem;
-  }
-  .gallery-item img {
-    height: 50px;
-  }
   footer {
-    font-size: 0.8rem;
-    padding: 8px 2px;
+    padding: 10px 5px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  footer a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+  .gallery-item p {
+    font-size: 0.85rem;
   }
 }
+
 </style>
 </head>
 <body>
